@@ -40,16 +40,10 @@ h1 {
 .card {
     padding: 10px 25px 10px 25px;
     border-radius: 10px;
-    background: #553c4e;
+    background: #B89393;
     width: 85vw;
     color: #fff;
     display: inline-block;
-    box-shadow: 2px 2px 1px 0px #330835;
-}
-
-.card:hover {
-    margin-top: 2px;
-    box-shadow: none;
 }
 
 .colon {
@@ -60,7 +54,7 @@ h1 {
 .date {
     display: inline;
     min-width: 162px;
-    font-family: 'Ubuntu', cursive;
+    font-family: 'Krona One', cursive;
     font-size: 2em;
     padding-right: 30px;
 }
@@ -68,7 +62,7 @@ h1 {
     </style>
 </head>
 <body>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
 
 <div class="full-table">
   <div class="table-cell">
@@ -82,15 +76,15 @@ h1 {
 </div>
 
 <script>
-    function date() {
-var today = new Date();
-document.getElementById('date').innerHTML = today.toDateString();
+function date() {
+    var today = new Date();
+    document.getElementById('date').innerHTML = today.toDateString();
 }
 
 
 function dateTime() {
-date();
-setTimeout(dateTime, 500);
+    date();
+    setTimeout(dateTime, 500);
 }
 
 dateTime()
